@@ -1,9 +1,9 @@
 import "./UserProfile.css";
 function UserProfile({ name, email }) {
   return (
-    <div>
-      <h2>{name}</h2>
-      <h3>
+    <div className="user-info">
+      <h2 className="profile-name">{name}</h2>
+      <h3 className="profile-email">
         <a href={`mailto:${email}`}>{name}</a>
       </h3>
     </div>
